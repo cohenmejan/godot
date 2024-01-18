@@ -1,0 +1,1 @@
+scons p=windows vsproj=yes target=editor module_mono_enabled=yes

@@ -1,0 +1,1 @@
+START PowerShell.exe "& "./bin/godot.windows.editor.x86_64.mono.exe --generate-mono-glue ./modules/mono/glue; dotnet nuget add source ~/MyLocalNugetSource --name MyLocalNugetSource; python ./modules/mono/build_scripts/build_assemblies.py --godot-output-dir ./bin --push-nupkgs-local ./~/MyLocalNugetSource"
