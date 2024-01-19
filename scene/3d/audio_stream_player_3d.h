@@ -71,6 +71,8 @@ private:
 	Ref<AudioStreamPlayback> setplayback;
 
 	AttenuationModel attenuation_model = ATTENUATION_INVERSE_DISTANCE;
+	float volume_db = 0.0;
+	float base_volume_db = 0.0;
 	float unit_size = 10.0;
 	float max_db = 3.0;
 	// Internally used to take doppler tracking into account.
@@ -127,6 +129,9 @@ public:
 
 	void set_volume_db(float p_volume);
 	float get_volume_db() const;
+
+	void set_base_volume_db(float p_base_volume_db);
+	float get_base_volume_db() const;
 
 	void set_unit_size(float p_volume);
 	float get_unit_size() const;
